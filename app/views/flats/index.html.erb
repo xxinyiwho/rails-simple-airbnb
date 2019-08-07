@@ -1,0 +1,25 @@
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-12">
+      <h1>All our flats (<%= @flats.count %>)</h1>
+      <div class="row">
+       <% @flats.each do |flat| %>
+       <div class="col-3">
+        <div class="card">
+          <h2><%= flat.name %></h2>
+          <p><%= flat.address %></p>
+          <p><%= flat.price_per_night %>$</p>
+          <p><%= flat.number_of_guest %></p>
+          <% end %>
+
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+</div>
+</div>
